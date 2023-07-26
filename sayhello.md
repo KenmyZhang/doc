@@ -2,6 +2,7 @@
 
     type :类型 1文字、2图片
     content: 内容/或者图片链接
+    enable：true启动、false禁用
 
 ## Example 
 
@@ -43,6 +44,7 @@
 # 更新打招呼配置
     id 配置ID，数据类型int
     content 打招呼内容，数据类型string
+    enable：true启动、false禁用
 ## Example 
 
     curl -X POST "http://43.139.163.35:8081/api/v3/sayhello/setting/update" -i -H "token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzIiwiY3JlYXRlX3RpbWUiOjE2OTAzNzQwNDh9.v8EnBzvNZ9lPotme6RxevBMQfxw9HQkum3tQeBWKAMg"  -d '{"id":1, "content":"6662134"}'

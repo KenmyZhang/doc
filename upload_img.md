@@ -4,7 +4,6 @@
 
 ## Example
 
-
 	curl -X POST "http://43.139.163.35:8081/api/v3/image/upload" -i \
 	 -H "token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzIiwiY3JlYXRlX3RpbWUiOjE2OTAzNzQwNDh9.v8EnBzvNZ9lPotme6RxevBMQfxw9HQkum3tQeBWKAMg" \
 	 -F imgfile=@"/Users/zhangkunming/Downloads/小程序.png"
@@ -21,4 +20,3 @@
 	Content-Length: 114
 
 	{"code":200,"msg":"上传成功!","result":{"path":"static/upload/2023July/e1a9571dc97cd15ac11e4edb5ce5d4d9.png"}}
-	
