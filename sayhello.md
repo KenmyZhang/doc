@@ -61,10 +61,10 @@
 
 # 删除打招呼配置
 
-    id ：配置id，数据类型 int
+    ids ：配置ids，数据类型 int
 ## Example  
 
-curl -X POST "http://43.139.163.35:8081/api/v3/sayhello/setting/del" -i -H "token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzIiwiY3JlYXRlX3RpbWUiOjE2OTAzNzQwNDh9.v8EnBzvNZ9lPotme6RxevBMQfxw9HQkum3tQeBWKAMg"  -d '{"id":1}'
+curl -X POST "http://43.139.163.35:8081/api/v3/sayhello/setting/del" -i -H "token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzIiwiY3JlYXRlX3RpbWUiOjE2OTAzNzQwNDh9.v8EnBzvNZ9lPotme6RxevBMQfxw9HQkum3tQeBWKAMg"  -d '{"ids":[1]}'
 HTTP/1.1 200 OK
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Headers: Authorization, Content-Length, X-CSRF-Token, Token,session
