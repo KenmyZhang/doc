@@ -1,4 +1,8 @@
-# 新建自动回复组
+# 新建组
+
+    name 组名，数据类型string
+
+## Example
 
     curl -X POST "http://43.139.163.35:8081/api/v3/autoreply/group/setting" -i -H "token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzIiwiY3JlYXRlX3RpbWUiOjE2OTAzNzQwNDh9.v8EnBzvNZ9lPotme6RxevBMQfxw9HQkum3tQeBWKAMg"  -d '{"name":"组名"}'
     HTTP/1.1 200 OK
@@ -14,8 +18,10 @@
     {"code":200,"result":"ok"}
 
 
-# 更新自动回复组名
+# 更新组名
 
+    id 组ID，数据类型int
+    name 组名，数据类型string
 
 ## Example 
     curl -X POST "http://43.139.163.35:8081/api/v3/autoreply/group/setting/update" -i -d '{"id":1, "name":"测试组"}' -H "token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzIiwiY3JlYXRlX3RpbWUiOjE2OTAzNzQwNDh9.v8EnBzvNZ9lPotme6RxevBMQfxw9HQkum3tQeBWKAMg" 
@@ -32,9 +38,11 @@
     {"code":200,"result":"ok"}
 
 
-# 删除自动回复组
+# 删除组
 
     支持批量删除
+
+    ids 组id，数据类型[]int
 
 ##  Example
 
@@ -53,7 +61,7 @@
     {"code":200,"result":"ok"}
 
 
-# 自动回复组列表查询
+# 组列表查询
     不需要翻页
 
 ## Example

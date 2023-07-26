@@ -1,0 +1,161 @@
+# 增加组
+
+    name 组名，数据类型string
+
+## Example
+
+    curl -X POST "http://43.139.163.35:8081/api/v3/quickmessage/group/setting" -i  -d '{"name":"组名"}'  -H "token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzIiwiY3JlYXRlX3RpbWUiOjE2OTAzNzQwNDh9.v8EnBzvNZ9lPotme6RxevBMQfxw9HQkum3tQeBWKAMg" 
+    HTTP/1.1 200 OK
+    Access-Control-Allow-Credentials: true
+    Access-Control-Allow-Headers: Authorization, Content-Length, X-CSRF-Token, Token,session
+    Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE,UPDATE
+    Access-Control-Allow-Origin: *
+    Access-Control-Expose-Headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers
+    Content-Type: application/json; charset=utf-8
+    Date: Wed, 26 Jul 2023 15:05:17 GMT
+    Content-Length: 26
+
+    {"code":200,"result":"ok"}
+
+
+# 更新组
+
+    id 组ID，数据类型int
+    name 组名，数据类型string
+
+## Example
+
+    curl -X POST "http://43.139.163.35:8081/api/v3/quickmessage/group/setting/update" -i  -d '{"id":1,"name":"组名"}'  -H "token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzIiwiY3JlYXRlX3RpbWUiOjE2OTAzNzQwNDh9.v8EnBzvNZ9lPotme6RxevBMQfxw9HQkum3tQeBWKAMg" 
+    HTTP/1.1 200 OK
+    Access-Control-Allow-Credentials: true
+    Access-Control-Allow-Headers: Authorization, Content-Length, X-CSRF-Token, Token,session
+    Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE,UPDATE
+    Access-Control-Allow-Origin: *
+    Access-Control-Expose-Headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers
+    Content-Type: application/json; charset=utf-8
+    Date: Wed, 26 Jul 2023 15:06:48 GMT
+    Content-Length: 26
+
+    {"code":200,"result":"ok"}
+
+
+# 删除组
+
+    ids 组id，数据类型 []int
+
+## Example
+
+    curl -X POST "http://43.139.163.35:8081/api/v3/quickmessage/group/setting/del" -i  -d '{"ids":[1]}'  -H "token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzIiwiY3JlYXRlX3RpbWUiOjE2OTAzNzQwNDh9.v8EnBzvNZ9lPotme6RxevBMQfxw9HQkum3tQeBWKAMg" -H "origin:www.localc.com" 
+    HTTP/1.1 200 OK
+    Access-Control-Allow-Credentials: true
+    Access-Control-Allow-Headers: Authorization, Content-Length, X-CSRF-Token, Token,session
+    Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE,UPDATE
+    Access-Control-Allow-Origin: *
+    Access-Control-Expose-Headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers
+    Content-Type: application/json; charset=utf-8
+    Date: Wed, 26 Jul 2023 15:24:32 GMT
+    Content-Length: 26
+
+    {"code":200,"result":"ok"}
+
+# 查询组
+    
+    全量返回，不翻页
+
+##  Example
+
+
+    curl -X GET "http://43.139.163.35:8081/api/v3/quickmessage/group/setting" -i   -H "token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzIiwiY3JlYXRlX3RpbWUiOjE2OTAzNzQwNDh9.v8EnBzvNZ9lPotme6RxevBMQfxw9HQkum3tQeBWKAMg" -H "origin:www.localc.com" 
+    HTTP/1.1 200 OK
+    Access-Control-Allow-Credentials: true
+    Access-Control-Allow-Headers: Authorization, Content-Length, X-CSRF-Token, Token,session
+    Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE,UPDATE
+    Access-Control-Allow-Origin: *
+    Access-Control-Expose-Headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers
+    Content-Type: application/json; charset=utf-8
+    Date: Wed, 26 Jul 2023 15:25:42 GMT
+    Content-Length: 157
+
+    {"code":200,"data":[{"id":2,"name":"组名","is_del":0,"updated_time":"2023-07-26T23:25:40+08:00","created_time":"2023-07-26T23:25:40+08:00"}],"result":"ok"}
+
+
+
+# 增加快捷消息回复
+    group_id： 组id,数据类型int
+    content：内容，数据类型string
+
+## Example
+
+        curl -X POST "http://43.139.163.35:8081/api/v3/quickmessage/setting" -i  -d '{"group_id":1, "type":1, "content":"名称"}'  -H "token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzIiwiY3JlYXRlX3RpbWUiOjE2OTAzNzQwNDh9.v8EnBzvNZ9lPotme6RxevBMQfxw9HQkum3tQeBWKAMg" 
+        HTTP/1.1 200 OK
+        Access-Control-Allow-Credentials: true
+        Access-Control-Allow-Headers: Authorization, Content-Length, X-CSRF-Token, Token,session
+        Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE,UPDATE
+        Access-Control-Allow-Origin: *
+        Access-Control-Expose-Headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers
+        Content-Type: application/json; charset=utf-8
+        Date: Wed, 26 Jul 2023 15:35:45 GMT
+        Content-Length: 26
+
+        {"code":200,"result":"ok"}
+
+
+# 更新快捷消息回复
+    id: 快捷消息回复配置ID, 数据类型int
+    group_id： 组id,数据类型int
+    content：内容，数据类型string
+
+## Example
+
+        curl -X POST "http://43.139.163.35:8081/api/v3/quickmessage/setting/update" -i  -d '{"id":1, "group_id":1, "type":1, "content":"名称"}'  -H "token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzIiwiY3JlYXRlX3RpbWUiOjE2OTAzNzQwNDh9.v8EnBzvNZ9lPotme6RxevBMQfxw9HQkum3tQeBWKAMg" 
+        HTTP/1.1 200 OK
+        Access-Control-Allow-Credentials: true
+        Access-Control-Allow-Headers: Authorization, Content-Length, X-CSRF-Token, Token,session
+        Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE,UPDATE
+        Access-Control-Allow-Origin: *
+        Access-Control-Expose-Headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers
+        Content-Type: application/json; charset=utf-8
+        Date: Wed, 26 Jul 2023 15:35:45 GMT
+        Content-Length: 26
+
+        {"code":200,"result":"ok"}
+
+# 删除快捷消息回复
+    ids: 快捷消息回复配置ID, 数据类型[]int
+
+
+## Example
+
+        curl -X POST "http://43.139.163.35:8081/api/v3/quickmessage/setting/del" -i  -d '{"ids":[1]}'  -H "token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzIiwiY3JlYXRlX3RpbWUiOjE2OTAzNzQwNDh9.v8EnBzvNZ9lPotme6RxevBMQfxw9HQkum3tQeBWKAMg" 
+        HTTP/1.1 200 OK
+        Access-Control-Allow-Credentials: true
+        Access-Control-Allow-Headers: Authorization, Content-Length, X-CSRF-Token, Token,session
+        Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE,UPDATE
+        Access-Control-Allow-Origin: *
+        Access-Control-Expose-Headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers
+        Content-Type: application/json; charset=utf-8
+        Date: Wed, 26 Jul 2023 15:35:45 GMT
+        Content-Length: 26
+
+        {"code":200,"result":"ok"}
+
+
+# 查询快捷消息配置列表
+
+    全量返回
+
+## Example
+
+
+    curl -X GET "http://43.139.163.35:8081/api/v3/quickmessage/setting" -i   -H "token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzIiwiY3JlYXRlX3RpbWUiOjE2OTAzNzQwNDh9.v8EnBzvNZ9lPotme6RxevBMQfxw9HQkum3tQeBWKAMg" 
+    HTTP/1.1 200 OK
+    Access-Control-Allow-Credentials: true
+    Access-Control-Allow-Headers: Authorization, Content-Length, X-CSRF-Token, Token,session
+    Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE,UPDATE
+    Access-Control-Allow-Origin: *
+    Access-Control-Expose-Headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers
+    Content-Type: application/json; charset=utf-8
+    Date: Wed, 26 Jul 2023 15:44:05 GMT
+    Content-Length: 195
+
+    {"code":200,"data":[{"id":2,"type":1,"group_id":0,"account":"","content":"名称","is_del":0,"updated_time":"2023-07-26T23:35:04+08:00","created_time":"2023-07-26T23:35:04+08:00"}],"result":"ok"}
