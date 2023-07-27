@@ -50,7 +50,7 @@
 
 # 统计
 
-    "account": 账号
+    "account": 账号，支持多个，多个用逗号分隔
     "day": 日期
     "user_amount":用户数
     "reply_amount":回复数
