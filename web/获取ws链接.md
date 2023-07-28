@@ -1,7 +1,7 @@
 # 获取长链接ws
 
     content：消息内容
-    content_type: 内容类型， 0和1文字、2 图片
+    content_type: 内容类型， 0和1文字、2图片、3 位置、 4、视频
     group_id: 群组ID
     group_name: 群组名称
     msg_id:消息id
