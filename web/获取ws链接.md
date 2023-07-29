@@ -74,3 +74,14 @@
         "type":"auto_close",
         "data":"10dff9ba-2ff1-42a0-8797-3c75548815d7"
     }
+
+    发送服务端
+    {
+        "type":"kfOnline",
+        "data":{
+            "id":"kefu2",
+            "name":"智能客服系统",
+            "avator":"/static/images/4.jpg",
+            "to_id":""
+        }
+    }
