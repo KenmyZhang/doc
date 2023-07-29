@@ -23,6 +23,27 @@
         "data":""
     }
 
+    {
+        "type":"kfConnect",
+        "data":{
+            "id":"kefu2",
+            "name":"智能客服系统",
+            "avator":"/static/images/4.jpg",
+            "to_id":"10dff9ba-2ff1-42a0-8797-3c75548815d7"
+        }
+    }
+
+
+    {
+        "type":"kfOnline",
+        "data":{
+            "id":"kefu2",
+            "name":"智能客服系统",
+            "avator":"/static/images/4.jpg",
+            "to_id":""
+        }
+    }
+
     服务端返回
 
     {
@@ -30,7 +51,6 @@
         "data":null
     }
 
-    服务端返回
 
     {
         "type":"userOffline",
@@ -40,19 +60,41 @@
         }
     }
 
-    服务端返回
+    {
+        "type":"userOnline",
+        "data":{
+            "avator":"http://43.139.163.35:8081/static/upload/2023July/8deb53dc7aa149239e3f0f629e21795f.png",
+            "last_message":"hhhh你好",
+            "uid":"10dff9ba-2ff1-42a0-8797-3c75548815d7",
+            "username":"中国广东深圳网友"
+        }
+    }
+
+    {
+        "type":"notice",
+        "data":{
+            "avator":"http://43.139.163.35:8081/static/upload/2023July/8deb53dc7aa149239e3f0f629e21795f.png","content":"中国广东深圳网友来了",
+            "username":"中国广东深圳网友"
+        }
+    }
+
+
 
     name:用户名称
     avator:用户头像
     id：发送方id
-    visitor_id:访客ID/用户ID
     group_name:群组名称，当type=2,群聊当时候才有值
     group_id:群组id，当type=2,群聊当时候才有值
+    type:  消息类型： 1 好友 2 群聊 3 系统消息
     time:消息时间
     to_id:接收方id/客服ID
     content:消息内容
     msg_id: 消息ID
     content_type: 内容类型 1 文字、2 图片、 3地址、4 视频
+    city: 城市
+    client_ip: 用户IP
+    
+
 
 
     {
@@ -61,13 +103,13 @@
             "name":"中国广东深圳网友",
             "avator":"static/upload/2023July/8deb53dc7aa149239e3f0f629e21795f.png",
             "id":"10dff9ba-2ff1-42a0-8797-3c75548815d7",
-            "visitor_id":"",
             "group_name":"",
             "group_id":0,
-            "time":"2023-07-29 12:49:05",
+            "type":1,
+            "time":"2023-07-29 13:29:41",
             "to_id":"kefu2",
-            "content":"你好",
-            "msg_id":232,
+            "content":"hhhh你好",
+            "msg_id":236,
             "content_type":2,
             "city":"",
             "client_ip":"",
