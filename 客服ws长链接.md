@@ -90,7 +90,7 @@
     to_id:接收方id/客服ID
     content:消息内容
     msg_id: 消息ID
-    content_type: 内容类型 1 文字、2 图片、 3地址、4 视频
+    content_type: 内容类型 1 文字、2 图片、 3地址、4 视频 、5 音频
     city: 城市
     client_ip: 用户IP
     
