@@ -85,7 +85,7 @@
     id：发送方id
     group_name:群组名称，当type=2,群聊当时候才有值
     group_id:群组id，当type=2,群聊当时候才有值
-    type:  消息类型： 1 好友 2 群聊 3 系统消息
+    type:  消息类型： 0 好友 1 群聊 2 系统消息
     time:消息时间
     to_id:接收方id/客服ID
     content:消息内容
