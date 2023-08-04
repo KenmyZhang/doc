@@ -1,5 +1,9 @@
 # ip库查询
-
+    page: 第几页
+    page_num: 每页返回多少
+    begin_time:开始时间戳 单位秒
+    end_time:结束时间戳 单位秒
+    status: 状态，1重复 2不重复 0 全部
 ## Example 
 
     curl -X GET "http://127.0.0.1:8081/api/v3/ip/datas?page=1&page_num=3" 
