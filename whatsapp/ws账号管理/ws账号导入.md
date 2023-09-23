@@ -4,6 +4,7 @@
 ## 参数
     group_id:组ID
     mobile: 手机号
+    fire_group: true 炒群账号、false 普通账号
     cookie: cookie信息
 
 
