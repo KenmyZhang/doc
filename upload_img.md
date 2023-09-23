@@ -6,7 +6,7 @@
 
 	curl -X POST "http://43.139.163.35:8081/api/v3/image/upload" -i \
 	 -H "token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiMTIzIiwiY3JlYXRlX3RpbWUiOjE2OTAzNzQwNDh9.v8EnBzvNZ9lPotme6RxevBMQfxw9HQkum3tQeBWKAMg" \
-	 -F imgfile=@"/Users/zhangkunming/Downloads/小程序.png"
+	 -F imgfile=@"/Users/Downloads/小程序.png"
 	HTTP/1.1 100 Continue
 
 	HTTP/1.1 200 OK
